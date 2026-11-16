@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wbfit"
+version = "1.0.0"
+description = "Fit of the dynamical mass-luminosity relation of Gaia wide binaries (Wang et al., in prep.)"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "astropy", "jax", "numpyro"]
+license = {file = "LICENSE"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
